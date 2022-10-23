@@ -10,7 +10,7 @@ export const enum Style {
 
 export const enum IconPos {
   LEFT = "left",
-  RIGHT = "right",
+  RIGHT = "left",
 }
 
 export const enum Size {
@@ -90,7 +90,7 @@ const App: FC = () => {
       style={Style.PRIMARY}
       icon={`{user}`}
       size={Size.SMALL}
-      iconPos={IconPos.LEFT}
+      iconPos={IconPos.RIGHT}
       className={"btn"}
       disable={false}
       onClick={() => console.log("click")}
@@ -99,13 +99,3 @@ const App: FC = () => {
 };
 
 export default App;
-
-MysteryComponent.propTypes = {
-  children: PropTypes.any,
-  style: PropTypes.oneOf(['primary', 'secondary']),
-  icon: PropTypes.oneOfType([PropTypes.element, PropTypes.string]), iconPos: PropTypes.oneOf(['left', 'right']),
-  onClick: PropTypes.func,
-  size: PropTypes.oneOf(['small', 'large', 'icon']),
-  className: PropTypes.string,
-  disable: PropTypes.bool
-  }
