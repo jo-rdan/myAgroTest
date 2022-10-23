@@ -1,0 +1,40 @@
+.default__mystery {
+    padding: 10px;
+}
+
+.mystery__primary {
+    background-color: dodgerblue;
+    color: beige;
+}
+
+.mystery__secondary {
+    background-color: lightblue;
+    color: beige;
+}
+
+.mystery--icon p{
+    color: red;
+}
+
+
+.mystery-size--small p{
+    font-size: small;
+}
+.mystery-size--large p {
+    font-size: large;
+    
+}
+.mystery-size--icon {
+    font-size: medium;
+}
+
+.disabled-mystery {
+    opacity: .5;
+    cursor: text;
+}
+
+.btn {
+    border-radius: 20px;
+    border: none;
+    outline: none
+}
